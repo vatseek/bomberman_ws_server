@@ -2,7 +2,7 @@
   "name": "bomberman",
   "version": "1.0.0",
   "description": "bomberman ws server",
-  "main": "server/app.js",
+  "main": "app.js",
   "dependencies": {
     "node-static": "^0.7.7",
     "ws": "^0.8.1"
@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/app.js"
+    "start": "node app.js"
   },
   "engines": {
     "node": "0.12.7"
