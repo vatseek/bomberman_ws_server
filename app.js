@@ -83,7 +83,7 @@ var addBarricade = function(field) {
     return addBarricade(field);
 };
 
-var mobsCount = 6;
+var mobsCount = 20;
 var addMobs = function(field){
     if (mobsCount < 1) {
         return field;
