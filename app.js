@@ -22,7 +22,9 @@ const fieldSize = 33;
 var WebSocketServer = new require('ws');
 var clients = {};
 var mobs = [];
-var webSocketServer = new WebSocketServer.Server({ port: 8081 });
+var port = process.env.PORT || 5000;
+var webSocketServer = new WebSocketServer.Server({ port: port });
+console.log('Starting on port:' + port);
 
 function initFields() {
     var field = { };
