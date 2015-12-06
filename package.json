@@ -1,0 +1,28 @@
+{
+  "name": "bomberman",
+  "version": "1.0.0",
+  "description": "bomberman ws server",
+  "main": "server/app.js",
+  "dependencies": {
+    "node-static": "^0.7.7",
+    "ws": "^0.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vatseek/bomberman_ws.git"
+  },
+  "keywords": [
+    "game",
+    "bomberman"
+  ],
+  "author": "vatseek",
+  "license": "MIT"
+}
