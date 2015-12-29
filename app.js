@@ -2,9 +2,10 @@ var g = require('./lib/g');
 var WebSocketServer = new require('ws');
 var clients = {};
 var port = process.env.PORT || 5000;
+var Field = require('./lib/field');
 
-/** Init field (put metal and brick)*/
-global.field = require('./lib/field')(g.fieldSize, 120);
+/** Init field */
+global.field = new Field(g.fieldSize, 120);
 /** Set mobs to field */
 global.field.setMobs(20);
 
