@@ -1,7 +1,6 @@
 var g = require('./lib/g');
 var WebSocketServer = new require('ws');
 var clients = {};
-var mobs = [];
 var port = process.env.PORT || 5000;
 
 /** Init field (put metal and brick)*/
@@ -25,10 +24,11 @@ webSocketServer.on('connection', function (ws) {
     });
 });
 
+var tickLong = 1000;
 setInterval(function() {
     global.field.next();
     var fieldString = global.field.getFieldString();
     for (var key in clients) {
         clients[key].send(fieldString);
     }
-}, 1000);
+}, tickLong);
